@@ -102,3 +102,221 @@
 //     console.log(`${number} is not a Palindrome`);
 //   }
   
+
+// 9.Check prime number 
+// function isPrime(num)
+// {
+//     if(num<=1)return false;
+//     if(num===2)return true;
+//     if(num%2===0)return false;
+
+//     const sqrt=Math.sqrt(num);
+//     for(let i=3; i<=sqrt;i+=2){
+//         if(num%i===0)return false;
+//     }
+//     return true;
+// }
+// const input=11;
+// console.log(`${input}is${isPrime(input)?'prime':'not prime'}`);
+
+
+
+// 10. Count Digits in a Number
+// function countDigits(number) {
+    
+//     return number.toString().length;
+//   }
+  
+ 
+//   const number = 5023;
+//   console.log(countDigits(number));  
+
+
+// 11. Sum of Digits
+// function sumOfDigits(number) {
+  
+//     return number
+//       .toString()
+//       .split('')
+//       .reduce((sum, digit) => sum + parseInt(digit), 0);
+//   }
+  
+ 
+//   const number = 123;
+//   console.log(sumOfDigits(number));  
+  
+  
+// 12. Check Armstrong Number
+// function isArmstrong(number) {
+//     const digits = number.toString().split('');
+//     const numDigits = digits.length;
+  
+//     const sum = digits.reduce((total, digit) => total + Math.pow(parseInt(digit), numDigits), 0);
+  
+    
+//     return sum === number;
+//   }
+  
+//   const number = 153;
+//   if (isArmstrong(number)) {
+//     console.log('Armstrong');
+//   } else {
+//     console.log('Not Armstrong');
+//   }
+  
+
+
+
+// 13.Generate Fibonacci Series
+
+// function generateFibonacci(n) {
+//     const fibSeries = [0, 1]; 
+    
+//     for (let i = 2; i < n; i++) {
+//       fibSeries.push(fibSeries[i - 1] + fibSeries[i - 2]);
+//     }
+//     return fibSeries.slice(0, n); 
+//   }
+  
+//   const n = 5;
+//   console.log(generateFibonacci(n).join(' ')); 
+  
+
+// 14. Check Vowel or Consonant
+// function checkVowelOrConsonant(char) {
+
+//     const vowels = 'aeiou';
+//     if (vowels.includes(char.toLowerCase())) {
+//       return 'Vowel';
+//     } else {
+//       return 'Consonant';
+//     }
+//   }
+  
+//   const char = 'a';
+//   console.log(checkVowelOrConsonant(char));  
+
+  
+// 15. Simple Calculator
+// function calculator(num1, num2, operator) {
+//     switch (operator) {
+//       case '+':
+//         return num1 + num2;
+//       case '-':
+//         return num1 - num2;
+//       case '*':
+//         return num1 * num2;
+//       case '/':
+//         if (num2 !== 0) {
+//           return num1 / num2;
+//         } else {
+//           return 'Error: Division by zero';
+//         }
+//       default:
+//         return 'Invalid operator';
+//     }
+//   }
+  
+  
+//   const num1 = 4;
+//   const num2 = 2;
+//   const operator = '+';
+  
+//   console.log(calculator(num1, num2, operator)); 
+  
+
+
+
+// 16. Find GCD (HCF)
+// function gcd(a, b) {
+  
+//     while (b !== 0) {
+//       let temp = b;
+//       b = a % b;
+//       a = temp;
+//     }
+//     return a;
+//   }
+  
+  
+//   const num1 = 20;
+//   const num2 = 28;
+  
+//   const result = gcd(num1, num2);
+  
+ 
+
+// 17. Check Perfect Number
+
+
+// function isPerfectNumber(num) {
+//     let sum = 0;
+  
+   
+//     for (let i = 1; i <= num / 2; i++) {
+//       if (num % i === 0) {
+//         sum += i;
+//       }
+//     }
+  
+//     return sum === num;
+//   }
+  
+//   const number = 28;
+  
+//   if (isPerfectNumber(number)) {
+//     console.log(`${number} is a Perfect Number`);
+//   } else {
+//     console.log(`${number} is not a Perfect Number`);
+//   }
+  
+
+// 18. Print All Divisors
+// function printDivisors(num) {
+//     let divisors = [];
+  
+
+//     for (let i = 1; i <= num; i++) {
+//       if (num % i === 0) {
+//         divisors.push(i);
+//       }
+//     }
+  
+//     console.log(divisors.join(' '));
+//   }
+  
+ 
+//   const number = 10;
+  
+//   printDivisors(number);
+  
+// 19. Number is Positive, Negative or Zero
+
+// function checkNumberSign(num) {
+//     if (num > 0) {
+//       console.log("Positive");
+//     } else if (num < 0) {
+//       console.log("Negative");
+//     } else {
+//       console.log("Zero");
+//     }
+//   }
+  
+//   const number = -5;
+  
+//   checkNumberSign(number);
+  
+
+// 20. Find Power (Exponentiation)
+function findPower(base, exponent) {
+    return Math.pow(base, exponent);
+  }
+  
+ 
+  const base = 2;
+  const exponent = 3;
+  
+ 
+  const result = findPower(base, exponent);
+  console.log(result);  
+  
