@@ -29,10 +29,7 @@
 //   }
   
  
-//   const year = 2020;
-  
-//   if (isLeapYear(year)) {
-//     console.log(`${year} is a Leap Year`);
+//   const year = 2020;r} is a Leap Year`);
 //   } else {
 //     console.log(`${year} is not a Leap Year`);
 //   }
@@ -271,6 +268,8 @@
 //   }
   
 
+
+
 // 18. Print All Divisors
 // function printDivisors(num) {
 //     let divisors = [];
@@ -307,16 +306,38 @@
 //   checkNumberSign(number);
   
 
+
+
+
+
 // 20. Find Power (Exponentiation)
+
+
 function findPower(base, exponent) {
     return Math.pow(base, exponent);
   }
-  
- 
   const base = 2;
   const exponent = 3;
   
- 
   const result = findPower(base, exponent);
   console.log(result);  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
